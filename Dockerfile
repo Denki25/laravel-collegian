@@ -12,9 +12,14 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
 
+RUN mkdir -p storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
+    && chmod -R 777 storage bootstrap/cache
+
 RUN cp .env.example .env || true
 
 RUN php artisan key:generate --force || true
+
+RUN php artisan optimize:clear || true
 
 EXPOSE 10000
 
