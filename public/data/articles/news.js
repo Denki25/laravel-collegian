@@ -9,27 +9,29 @@
 window.CLSU_ARTICLES = (window.CLSU_ARTICLES || []).concat([
 
     {
-        slug: "CLSU-posts-78.95%-passing-rate-in-February-2026-MPLE",
+        slug: "CLSU-posts-38-new-master-plumbers-in-July-2026-MPLE",
         category: "News",
         displayCategory: "NEWS",
-        title: "CLSU posts 78.95% passing rate in February 2026 MPLE",
-        summary: "Central Luzon State University (CLSU) recorded a 78.95% passing rate in the Master Plumbers Licensure Examination (MPLE) held Feb. 19 – 20, based on the results released by the Professional Regulation Commission on Wednesday, Feb. 25.",
-        author: "MARCO BACNIS",
-        authorLine: "By MARCO BACNIS/CLSU Collegian",
+        title: "CLSU posts 38 new master plumbers in July ‘26 MPLE",
+        summary: "Central Luzon State University (CLSU) produced 38 new master plumbers in the July 2026 Master Plumbers Licensure Examination (MPLE), posting an 84.44% institutional passing rate on July 15.",
+        author: "DENRIC MENDOZA",
+        authorLine: "By DENRIC MENDOZA/CLSU Collegian",
         credits: {
-            by: "MARCO BACNIS/CLSU Collegian",
+            by: "DENRIC MENDOZA/CLSU Collegian",
         },
-        date: "2026-03-01",
+        date: "2026-07-15",
         readTime: "2 min read",
-        image: "PHOTOS/NEWS/news16.jpg",
+        image: "PHOTOS/NEWS/news17.jpg",
         imageAlt: "CLSU 2026 MPLE",
         body: `
             <p>
-            Central Luzon State University (CLSU) recorded a 78.95% passing rate in the Master Plumbers Licensure Examination (MPLE) held Feb. 19 – 20, based on the results released by the Professional Regulation Commission on Wednesday, Feb. 25.<br><br>
-            Fifteen of 19 CLSU alumni passed the examination, with first-time takers logging eight passers (88.89%) and repeaters posting seven (70.00%).<br><br>
-            The university’s overall performance surpassed the national passing rate of 61.76%.<br><br>
-            The latest result marks the university’s highest performance post-pandemic: 46.15% in February 2022, 58.97% in July 2022, 51.61% in February 2023, 47.62% in July 2023, 58.82% in February 2024, 35.09% in July 2024, 52.78% in February 2025, and 59.09% in July 2025.<br><br>
-            Nationwide, 2,030 out of 3,287 examinees passed the February 2026 MPLE, as per the commission.<br><br>
+            Central Luzon State University (CLSU) produced 38 new master plumbers in the July 2026 Master Plumbers Licensure Examination (MPLE), posting an 84.44% institutional passing rate on July 15.<br><br>
+            The university exceeded the 78.68% national passing rate, where 4,907 of 6,237 examinees passed, as released by the Professional Regulation Commission (PRC).<br><br>
+            Among the passers in the university, 28 of 30 first-time takers passed for a 93.33%, while 10 of 15 repeaters passed for a 66.67% on the licensure examination.<br><br>
+            CLSU's performance improved by 5.49 percentage points from 78.95% in the February 2026 MPLE, marking its highest post-pandemic performance.<br><br>
+            The PRC administered the licensure examination on July 11-12 in testing centers throughout the National Capital Region (NCR), Baguio, Butuan, Cagayan de Oro, Cebu, Davao, Iloilo, Koronadal, Legazpi, Lucena, Pagadian, Rosales, Tacloban and Tuguegarao.<br><br>
+            Access the full results here:<br><br>
+            https://tinyurl.com/2v9az78r<br>
             </p>
 
             
