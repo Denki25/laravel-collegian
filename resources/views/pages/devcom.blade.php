@@ -1,8 +1,8 @@
-@php($activePage = 'devcom')
+﻿@php($activePage = 'devcom')
 @extends('layouts.app')
 @section('page_title', 'DevCom | CLSU Collegian')
 @section('page_description', 'Development communication stories and campus projects from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/devcom.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_attributes', 'data-section-category="DevCom" data-section-label="DevCom"')
 @section('body_class', '')
 @section('header_after_nav')
@@ -26,3 +26,4 @@
         </section>
     </main>
 @endsection
+

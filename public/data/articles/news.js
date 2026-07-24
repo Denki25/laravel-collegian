@@ -7,36 +7,6 @@
 // 6. Optional imageCaption for a short gray caption under the main photo.
 
 window.CLSU_ARTICLES = (window.CLSU_ARTICLES || []).concat([
-    {
-        slug: "CLSU-posts-38-new-master-plumbers-in-July-2026-MPLE",
-        category: "News",
-        displayCategory: "NEWS",
-        title: "CLSU posts 38 new master plumbers in July ‘26 MPLE",
-        summary: "Central Luzon State University (CLSU) produced 38 new master plumbers in the July 2026 Master Plumbers Licensure Examination (MPLE), posting an 84.44% institutional passing rate on July 15.",
-        author: "DENRIC MENDOZA",
-        authorLine: "By DENRIC MENDOZA/CLSU Collegian",
-        credits: {
-            by: "DENRIC MENDOZA/CLSU Collegian",
-        },
-        date: "2026-07-17",
-        readTime: "2 min read",
-        image: "PHOTOS/NEWS/news17.jpg",
-        imageAlt: "CLSU 2026 MPLE",
-        body: `
-            <p>
-           Central Luzon State University (CLSU) produced 38 new master plumbers in the July 2026 Master Plumbers Licensure Examination (MPLE), posting an 84.44% institutional passing rate on July 15.<br><br>
-            The university exceeded the 78.68% national passing rate, where 4,907 of 6,237 examinees passed, as released by the Professional Regulation Commission (PRC).<br><br>
-            Among the passers in the university, 28 of 30 first-time takers passed for a 93.33%, while 10 of 15 repeaters passed for a 66.67% on the licensure examination.<br><br>
-            CLSU's performance improved by 5.49 percentage points from 78.95% in the February 2026 MPLE, marking its highest post-pandemic performance.<br><br>
-            The PRC administered the licensure examination on July 11-12 in testing centers throughout the National Capital Region (NCR), Baguio, Butuan, Cagayan de Oro, Cebu, Davao, Iloilo, Koronadal, Legazpi, Lucena, Pagadian, Rosales, Tacloban and Tuguegarao.<br><br>
-            Access the full results here:<br><br>
-            <a href="https://www.prcboard.com/mple-results-july-2026-master-plumber-licensure-exam-list-of-passers" target="_blank">https://tinyurl.com/2v9az78r</a>
-            </p>
-
-            
-
-        `
-    },
 
     {
         slug: "CLSU-posts-78.95%-passing-rate-in-February-2026-MPLE",

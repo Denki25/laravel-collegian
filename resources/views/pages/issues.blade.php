@@ -1,8 +1,8 @@
-@php($activePage = 'issues')
+﻿@php($activePage = 'issues')
 @extends('layouts.app')
 @section('page_title', 'Archives | CLSU Collegian')
 @section('page_description', 'Browse archives and previous issues from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/issues.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_class', '')
 @section('header_after_nav')
     @include('partials.breaking-ticker')
@@ -29,3 +29,4 @@
         </section>
     </main>
 @endsection
+

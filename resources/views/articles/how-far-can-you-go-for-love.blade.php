@@ -1,8 +1,8 @@
-@extends('layouts.share')
+﻿@extends('layouts.share')
 
 @section('page_title', 'How far can you go for love? | CLSU Collegian')
 @section('page_description', 'For my family, freedom is the most important gift. Although I didn&#39;t personally experience martial law, I grew up listening to stories about it from my grandmother, Imang.')
-@section('canonical_url', url('/share/how-far-can-you-go-for-love.html?v=2'))
+@section('canonical_url', url('/article/how-far-can-you-go-for-love?v=2'))
 @section('og_title', 'How far can you go for love? | CLSU Collegian')
 @section('og_description', 'For my family, freedom is the most important gift. Although I didn&#39;t personally experience martial law, I grew up listening to stories about it from my grandmother, Imang.')
 @section('og_image', asset('PHOTOS/LITERARY/lit8.jpg'))
@@ -19,6 +19,8 @@
         <p style="font-size: 1.05rem; line-height: 1.6; color: #444; margin: 0 0 24px;">For my family, freedom is the most important gift. Although I didn&#39;t personally experience martial law, I grew up listening to stories about it from my grandmother, Imang.</p>
         <img src="{{ asset('PHOTOS/LITERARY/lit8.jpg') }}" alt="How far can you go for love?" style="width: 100%; height: auto; border-radius: 16px; display: block; margin-bottom: 20px;">
         <p style="font-size: .95rem; color: #666; margin: 0 0 16px;">This preview page is safe to share on Facebook and X/Twitter.</p>
-        <a href="{{ url('/article.html?slug=how-far-can-you-go-for-love') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
+        <a href="{{ url('/article?slug=how-far-can-you-go-for-love') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
     </main>
 @endsection
+
+

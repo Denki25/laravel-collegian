@@ -1,8 +1,8 @@
-@php($activePage = 'infographics')
+﻿@php($activePage = 'infographics')
 @extends('layouts.app')
 @section('page_title', 'Komiks | CLSU Collegian')
 @section('page_description', 'Infographics and komiks from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/infographics.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_attributes', 'data-section-category="Komiks" data-section-label="Komiks"')
 @section('body_class', '')
 @section('header_after_nav')
@@ -26,3 +26,4 @@
         </section>
     </main>
 @endsection
+

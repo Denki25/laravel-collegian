@@ -1,8 +1,8 @@
-@php($activePage = 'editorial')
+﻿@php($activePage = 'editorial')
 @extends('layouts.app')
 @section('page_title', 'Editorial | CLSU Collegian')
 @section('page_description', 'Editorial stories from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/editorial.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_attributes', 'data-section-category="Editorial" data-section-label="Editorial"')
 @section('body_class', '')
 @section('header_after_nav')
@@ -27,3 +27,4 @@
         </section>
     </main>
 @endsection
+

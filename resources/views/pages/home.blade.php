@@ -1,8 +1,8 @@
-@php($activePage = 'home')
+﻿@php($activePage = 'home')
 @extends('layouts.app')
 @section('page_title', 'CLSU Collegian | The Official Student Publication of CLSU')
 @section('page_description', 'Official student publication of Central Luzon State University featuring news, features, opinion, sports, literary, multimedia, and archives.')
-@section('canonical_url', url('/index.html?v=2'))
+@section('canonical_url', url('/?v=2'))
 @section('og_title', 'CLSU Collegian | The Official Student Publication of CLSU')
 @section('og_description', 'Official student publication of Central Luzon State University featuring news, features, opinion, sports, literary, multimedia, and archives.')
 @section('body_class', 'home-page')
@@ -23,7 +23,7 @@
                         <span class="hero-meta-separator" id="heroMetaSeparator" aria-hidden="true">&bull;</span>
                         <span class="hero-byline" id="heroByline"></span>
                     </div>
-                    <a href="{{ asset('article.html') }}" class="read-more" id="heroLink">Read Story</a>
+                    <a href="{{ url('/article') }}" class="read-more" id="heroLink">Read Story</a>
                 </div>
                 <div class="hero-image" id="heroImageWrapper">
                     <div class="hero-slide-media" id="heroSlideMedia">
@@ -59,7 +59,7 @@
             <div class="container">
                 <div class="section-heading">
                     <h2>Latest Videos</h2>
-                    <a href="{{ asset('multimedia.html') }}" class="section-link">View all videos</a>
+                    <a href="{{ url('/multimedia') }}" class="section-link">View all videos</a>
                 </div>
                 <div class="videos-grid" id="homeMultimediaGrid"></div>
             </div>
@@ -69,10 +69,11 @@
             <div class="container">
                 <div class="section-heading">
                     <h2>Latest Archive</h2>
-                    <a href="{{ asset('issues.html') }}" class="section-link">Browse archives</a>
+                    <a href="{{ url('/issues') }}" class="section-link">Browse archives</a>
                 </div>
                 <div class="issues-grid" id="homeIssuesGrid"></div>
             </div>
         </section>
     </main>
 @endsection
+

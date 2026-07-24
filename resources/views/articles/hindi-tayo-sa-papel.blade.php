@@ -1,8 +1,8 @@
-@extends('layouts.share')
+﻿@extends('layouts.share')
 
 @section('page_title', 'Hindi Tayo sa Papel | CLSU Collegian')
 @section('page_description', 'For my family, freedom is the most important gift. Although I didn&#39;t personally experience martial law, I grew up listening to stories about it from my grandmother, Imang.')
-@section('canonical_url', url('/share/hindi-tayo-sa-papel.html?v=2'))
+@section('canonical_url', url('/article/hindi-tayo-sa-papel?v=2'))
 @section('og_title', 'Hindi Tayo sa Papel | CLSU Collegian')
 @section('og_description', 'For my family, freedom is the most important gift. Although I didn&#39;t personally experience martial law, I grew up listening to stories about it from my grandmother, Imang.')
 @section('og_image', asset('PHOTOS/LITERARY/lit10.jpg'))
@@ -19,6 +19,8 @@
         <p style="font-size: 1.05rem; line-height: 1.6; color: #444; margin: 0 0 24px;">For my family, freedom is the most important gift. Although I didn&#39;t personally experience martial law, I grew up listening to stories about it from my grandmother, Imang.</p>
         <img src="{{ asset('PHOTOS/LITERARY/lit10.jpg') }}" alt="Hindi Tayo sa Papel" style="width: 100%; height: auto; border-radius: 16px; display: block; margin-bottom: 20px;">
         <p style="font-size: .95rem; color: #666; margin: 0 0 16px;">This preview page is safe to share on Facebook and X/Twitter.</p>
-        <a href="{{ url('/article.html?slug=hindi-tayo-sa-papel') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
+        <a href="{{ url('/article?slug=hindi-tayo-sa-papel') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
     </main>
 @endsection
+
+

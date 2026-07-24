@@ -1,8 +1,8 @@
-@extends('layouts.share')
+﻿@extends('layouts.share')
 
 @section('page_title', 'Hindi natin laging hawak ang beat | CLSU Collegian')
 @section('page_description', 'Kung may summary and conclusion man ang buhay ng mga 4th year ngayong linggo, ito na ang final draft.')
-@section('canonical_url', url('/share/hindi-natin-laging-hawak-ang-beat.html?v=2'))
+@section('canonical_url', url('/article/hindi-natin-laging-hawak-ang-beat?v=2'))
 @section('og_title', 'Hindi natin laging hawak ang beat | CLSU Collegian')
 @section('og_description', 'Kung may summary and conclusion man ang buhay ng mga 4th year ngayong linggo, ito na ang final draft.')
 @section('og_image', asset('PHOTOS/KOMIKS/komiks2.jpg'))
@@ -19,6 +19,8 @@
         <p style="font-size: 1.05rem; line-height: 1.6; color: #444; margin: 0 0 24px;">Kung may summary and conclusion man ang buhay ng mga 4th year ngayong linggo, ito na ang final draft.</p>
         <img src="{{ asset('PHOTOS/KOMIKS/komiks2.jpg') }}" alt="hindi natin laging hawak ang beat" style="width: 100%; height: auto; border-radius: 16px; display: block; margin-bottom: 20px;">
         <p style="font-size: .95rem; color: #666; margin: 0 0 16px;">This preview page is safe to share on Facebook and X/Twitter.</p>
-        <a href="{{ url('/article.html?slug=hindi-natin-laging-hawak-ang-beat') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
+        <a href="{{ url('/article?slug=hindi-natin-laging-hawak-ang-beat') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
     </main>
 @endsection
+
+

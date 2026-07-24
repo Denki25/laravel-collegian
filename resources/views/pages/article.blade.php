@@ -1,8 +1,8 @@
-@php($activePage = '')
+﻿@php($activePage = '')
 @extends('layouts.app')
 @section('page_title', 'CLSU Collegian Article')
 @section('page_description', 'Campus stories, features, and multimedia from the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/article.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('og_type', 'article')
 @section('body_class', '')
 @section('extra_head')
@@ -126,3 +126,4 @@
         </aside>
     </main>
 @endsection
+

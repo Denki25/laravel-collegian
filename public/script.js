@@ -1,4 +1,4 @@
-const siteConfig = window.CLSU_SITE_CONFIG || {};
+﻿const siteConfig = window.CLSU_SITE_CONFIG || {};
 const siteArticles = Array.isArray(window.CLSU_ARTICLES) ? [...window.CLSU_ARTICLES] : [];
 const siteMultimedia = Array.isArray(window.CLSU_MULTIMEDIA)
     ? [...window.CLSU_MULTIMEDIA].sort((left, right) => {
@@ -36,7 +36,7 @@ function injectVercelAnalytics() {
         return;
     }
 
-    // Vercel Web Analytics bootstrap
+    // Vercel Web Analytics bootstrap for this static HTML site.
     window.va = window.va || function () {
         (window.vaq = window.vaq || []).push(arguments);
     };
@@ -55,7 +55,7 @@ function injectVercelSpeedInsights() {
         return;
     }
 
-    // Vercel Speed Insights bootstrap
+    // Vercel Speed Insights bootstrap for this static HTML site.
     window.si = window.si || function () {
         (window.siq = window.siq || []).push(arguments);
     };
@@ -78,7 +78,6 @@ function getPreferredTheme() {
     } catch (error) {
         // Ignore storage access failures.
     }
-
 
     return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
@@ -210,7 +209,7 @@ function isArticleNavigationLink(anchor) {
     }
 
     const href = anchor.getAttribute("href") || "";
-    return href.includes("article.html?slug=");
+    return href.includes("/article?slug=") || href.includes("/article/");
 }
 
 function setupArticleNavigationTransition() {
@@ -398,7 +397,7 @@ function formatDate(dateString) {
 }
 
 function getArticleUrl(slug) {
-    return `article.html?slug=${encodeURIComponent(slug)}`;
+    return `/article?slug=${encodeURIComponent(slug)}`;
 }
 
 function getArticleShareUrl(slug) {
@@ -410,11 +409,11 @@ function getArticleShareUrl(slug) {
         const baseUrl = window.location.origin && window.location.origin !== "null"
             ? window.location.origin
             : window.location.href;
-        const url = new URL(`share/${slug}.html`, baseUrl);
+        const url = new URL(`/article/${slug}`, baseUrl);
         url.searchParams.set("v", "2");
         return url.toString();
     } catch (error) {
-        return `share/${slug}.html?v=2`;
+        return `/article/${slug}?v=2`;
     }
 }
 
@@ -426,8 +425,8 @@ function normalizeSlugValue(slug) {
     return slug
         .trim()
         .toLowerCase()
-        .replace(/[‘’‚‛]/g, "'")
-        .replace(/[“”„‟]/g, '"');
+        .replace(/[â€˜â€™â€šâ€›]/g, "'")
+        .replace(/[â€œâ€â€žâ€Ÿ]/g, '"');
 }
 
 function getArticleBySlug(slug) {
@@ -468,7 +467,7 @@ function getRecentArticlesByCategory(category, limit = 5) {
 
 function getIssueUrl(issue) {
     const issueSlug = issue && issue.slug ? issue.slug : "";
-    return issueSlug ? `issues.html#${encodeURIComponent(issueSlug)}` : "issues.html";
+    return issueSlug ? `/issues#${encodeURIComponent(issueSlug)}` : "/issues";
 }
 
 function getSortedIssuesByNewest() {
@@ -548,7 +547,7 @@ function getPrimaryArticleImage(article) {
 
 function updateArticleSocialMeta(article) {
     // Keep these values aligned with scripts/article-seo.js, which generates the
-    // server-rendered /share/*.html preview pages used by Facebook and X/Twitter.
+    // server-rendered article preview pages used by Facebook and X/Twitter.
     if (!article) {
         return;
     }
@@ -891,7 +890,7 @@ function renderTicker() {
     }
 
     const items = siteData.tickerItems.length > 0 ? siteData.tickerItems : ["Latest updates from CLSU Collegian"];
-    ticker.innerHTML = `<span>BREAKING:</span> ${items.join(" • ")}`;
+    ticker.innerHTML = `<span>BREAKING:</span> ${items.join(" â€¢ ")}`;
 }
 
 function getArticleMedia(article, surface = "article") {
@@ -1217,7 +1216,7 @@ function buildSearchIndex() {
         image: "",
         imageAlt: item.title || "Multimedia entry",
         slug: "",
-        url: item.sourceUrl || "multimedia.html",
+        url: item.sourceUrl || "/multimedia",
         embedUrl: item.embedUrl || "",
         aspectRatio: item.aspectRatio || "portrait",
         platform: item.platform || "Multimedia",
@@ -1394,27 +1393,27 @@ function createSearchResultMeta(item) {
             item.platform || "Multimedia",
             item.presenter ? `${item.presenterLabel || "Host/s"} ${item.presenter}` : "",
             item.editor ? `${item.editorLabel || "Editor/s:"} ${item.editor}` : ""
-        ].filter(Boolean).join(" • ");
+        ].filter(Boolean).join(" â€¢ ");
     }
 
     if (item.resultType === "archive") {
         return [
-            item.issueLabel || "Kulê Archives",
+            item.issueLabel || "KulÃª Archives",
             item.date ? formatDate(item.date) : ""
-        ].filter(Boolean).join(" • ");
+        ].filter(Boolean).join(" â€¢ ");
     }
 
     return [
         item.author ? `By ${item.author}` : "",
         item.date ? formatDate(item.date) : "",
         item.readTime || ""
-    ].filter(Boolean).join(" • ");
+    ].filter(Boolean).join(" â€¢ ");
 }
 
 function createSearchResultCard(item) {
     const categoryLabel = item.resultType === "multimedia"
         ? "Multimedia"
-        : (item.resultType === "archive" ? "Kulê Archives" : (item.displayCategory || item.category || "Article"));
+        : (item.resultType === "archive" ? "KulÃª Archives" : (item.displayCategory || item.category || "Article"));
     const actionLabel = item.resultType === "multimedia"
         ? "Watch now"
         : (item.resultType === "archive" ? "View archive" : "Read article");
@@ -1472,7 +1471,7 @@ function createSectionCard(article) {
                     <p>${article.summary}</p>
                     <div class="news-meta">
                         <span>By ${article.author}</span>
-                        <span>•</span>
+                        <span>â€¢</span>
                         <span>${formatDate(article.date)}</span>
                         <span>&bull;</span>
                         <span>${readTime}</span>
@@ -1818,7 +1817,7 @@ function createIssueCard(issue, isFeatured = false) {
 
     return `
         <article class="${archiveClasses.join(" ")}"${archiveId}>
-            <a class="archive-cover-link" href="${getIssueUrl(issue)}" aria-label="View ${issue.title} in Kulê Archives">
+            <a class="archive-cover-link" href="${getIssueUrl(issue)}" aria-label="View ${issue.title} in KulÃª Archives">
                 <div class="archive-cover-shell" aria-hidden="true"></div>
                 <img src="${issue.image}" alt="${issue.imageAlt || issue.title}" class="archive-cover-image">
             </a>
@@ -2720,3 +2719,4 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+

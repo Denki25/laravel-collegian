@@ -1,8 +1,8 @@
-@php($active = $activePage ?? '')
+﻿@php($active = $activePage ?? '')
 <nav class="navbar">
     <div class="nav-container">
         <div class="logo">
-            <a href="{{ asset('index.html') }}" class="logo-link" aria-label="CLSU Collegian home">
+            <a href="{{ url('/') }}" class="logo-link" aria-label="CLSU Collegian home">
                 <span class="logo-mark" aria-hidden="true">
                     <img src="{{ asset('logo.png') }}" alt="">
                 </span>
@@ -13,17 +13,17 @@
             </a>
         </div>
         <ul class="nav-menu">
-            <li><a href="{{ asset('index.html') }}" @class(['active' => $active === 'home'])>Home</a></li>
-            <li><a href="{{ asset('news.html') }}" @class(['active' => $active === 'news'])>News</a></li>
-            <li><a href="{{ asset('opinion.html') }}" @class(['active' => $active === 'opinion'])>Opinion</a></li>
-            <li><a href="{{ asset('features.html') }}" @class(['active' => $active === 'features'])>Features</a></li>
-            <li><a href="{{ asset('devcom.html') }}" @class(['active' => $active === 'devcom'])>DevCom</a></li>
-            <li><a href="{{ asset('sports.html') }}" @class(['active' => $active === 'sports'])>Sports</a></li>
-            <li><a href="{{ asset('literary.html') }}" @class(['active' => $active === 'literary'])>Literary</a></li>
-            <li><a href="{{ asset('infographics.html') }}" @class(['active' => $active === 'infographics'])>Komiks</a></li>
-            <li><a href="{{ asset('multimedia.html') }}" @class(['active' => $active === 'multimedia'])>Multimedia</a></li>
-            <li><a href="{{ asset('issues.html') }}" @class(['active' => $active === 'issues'])>Archives</a></li>
-            <li><a href="{{ asset('about.html') }}" @class(['active' => $active === 'about'])>About</a></li>
+            <li><a href="{{ url('/') }}" @class(['active' => $active === 'home'])>Home</a></li>
+            <li><a href="{{ url('/news') }}" @class(['active' => $active === 'news'])>News</a></li>
+            <li><a href="{{ url('/opinion') }}" @class(['active' => $active === 'opinion'])>Opinion</a></li>
+            <li><a href="{{ url('/features') }}" @class(['active' => $active === 'features'])>Features</a></li>
+            <li><a href="{{ url('/devcom') }}" @class(['active' => $active === 'devcom'])>DevCom</a></li>
+            <li><a href="{{ url('/sports') }}" @class(['active' => $active === 'sports'])>Sports</a></li>
+            <li><a href="{{ url('/literary') }}" @class(['active' => $active === 'literary'])>Literary</a></li>
+            <li><a href="{{ url('/infographics') }}" @class(['active' => $active === 'infographics'])>Komiks</a></li>
+            <li><a href="{{ url('/multimedia') }}" @class(['active' => $active === 'multimedia'])>Multimedia</a></li>
+            <li><a href="{{ url('/issues') }}" @class(['active' => $active === 'issues'])>Archives</a></li>
+            <li><a href="{{ url('/about') }}" @class(['active' => $active === 'about'])>About</a></li>
         </ul>
         <div class="nav-tools">
             <form class="header-search" role="search" action="#" aria-label="Site search" onsubmit="return false;">
@@ -43,4 +43,5 @@
         </div>
     </div>
 </nav>
+
 

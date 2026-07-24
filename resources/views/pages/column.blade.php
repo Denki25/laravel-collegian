@@ -1,8 +1,8 @@
-@php($activePage = 'column')
+﻿@php($activePage = 'column')
 @extends('layouts.app')
 @section('page_title', 'Column | CLSU Collegian')
 @section('page_description', 'Column stories from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/column.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_attributes', 'data-section-category="Column" data-section-label="Column"')
 @section('body_class', '')
 @section('header_after_nav')
@@ -26,3 +26,4 @@
         </section>
     </main>
 @endsection
+

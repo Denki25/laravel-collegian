@@ -1,8 +1,8 @@
-@php($activePage = 'sports')
+﻿@php($activePage = 'sports')
 @extends('layouts.app')
 @section('page_title', 'Sports | CLSU Collegian')
 @section('page_description', 'Sports coverage, scores, and campus athletics stories from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/sports.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_attributes', 'data-section-category="Sports" data-section-label="Sports"')
 @section('body_class', '')
 @section('header_after_nav')
@@ -26,3 +26,4 @@
         </section>
     </main>
 @endsection
+

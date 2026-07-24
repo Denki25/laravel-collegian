@@ -1,8 +1,8 @@
-@php($activePage = 'about')
+﻿@php($activePage = 'about')
 @extends('layouts.app')
 @section('page_title', 'About | CLSU Collegian')
 @section('page_description', 'Learn more about CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/about.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_attributes', '')
 @section('header_after_nav')
     @include('partials.breaking-ticker')
@@ -77,7 +77,7 @@
                     <div class="board-grid editors-grid">
                         <div class="board-member"><div class="member-info"><h3>DENNIS <br>MOISES</h3><p class="member-title">News Editor</p></div></div>
                         <div class="board-member"><div class="member-info"><h3>ALLAN <br>BULATAO</h3><p class="member-title">Opinion Editor</p></div></div>
-                        <div class="board-member"><div class="member-info"><h3>REGINA ROSE<br>SUPEÑA</h3><p class="member-title">Features Editor</p></div></div>
+                        <div class="board-member"><div class="member-info"><h3>REGINA ROSE<br>SUPEÃ‘A</h3><p class="member-title">Features Editor</p></div></div>
                         <div class="board-member"><div class="member-info"><h3>ELJOHN <br>TOLENTINO</h3><p class="member-title">Sports Editor</p></div></div>
                         <div class="board-member"><div class="member-info"><h3>REYMARC <br> ABAYA</h3><p class="member-title">DevCom Editor</p></div></div>
                         <div class="board-member"><div class="member-info"><h3>CHARLES KENNETH NEPOMUCENO</h3><p class="member-title">Literary Editor</p></div></div>
@@ -93,3 +93,4 @@
         </section>
     </main>
 @endsection
+

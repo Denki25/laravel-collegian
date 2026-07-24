@@ -1,8 +1,8 @@
-@php($activePage = 'literary')
+﻿@php($activePage = 'literary')
 @extends('layouts.app')
 @section('page_title', 'Literary | CLSU Collegian')
 @section('page_description', 'Literary stories and creative works from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/literary.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_attributes', 'data-section-category="Literary" data-section-label="Literary"')
 @section('body_class', '')
 @section('header_after_nav')
@@ -26,3 +26,4 @@
         </section>
     </main>
 @endsection
+

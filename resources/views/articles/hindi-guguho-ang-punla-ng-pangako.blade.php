@@ -1,8 +1,8 @@
-@extends('layouts.share')
+﻿@extends('layouts.share')
 
 @section('page_title', 'Hindi Guguho ang Punla ng Pangako | CLSU Collegian')
 @section('page_description', 'Sa pagyapak sa maputik at makipot na taniman, Nakapunla ang pangarap na minimithi noon pa man; Mula sa pagpapatubig ng kalupaan, Hanggang sa bungang may dalang kinabukasan.')
-@section('canonical_url', url('/share/hindi-guguho-ang-punla-ng-pangako.html?v=2'))
+@section('canonical_url', url('/article/hindi-guguho-ang-punla-ng-pangako?v=2'))
 @section('og_title', 'Hindi Guguho ang Punla ng Pangako | CLSU Collegian')
 @section('og_description', 'Sa pagyapak sa maputik at makipot na taniman, Nakapunla ang pangarap na minimithi noon pa man; Mula sa pagpapatubig ng kalupaan, Hanggang sa bungang may dalang kinabukasan.')
 @section('og_image', asset('PHOTOS/LITERARY/lit12.jpg'))
@@ -19,6 +19,8 @@
         <p style="font-size: 1.05rem; line-height: 1.6; color: #444; margin: 0 0 24px;">Sa pagyapak sa maputik at makipot na taniman, Nakapunla ang pangarap na minimithi noon pa man; Mula sa pagpapatubig ng kalupaan, Hanggang sa bungang may dalang kinabukasan.</p>
         <img src="{{ asset('PHOTOS/LITERARY/lit12.jpg') }}" alt="Hindi Guguho ang Punla ng Pangako" style="width: 100%; height: auto; border-radius: 16px; display: block; margin-bottom: 20px;">
         <p style="font-size: .95rem; color: #666; margin: 0 0 16px;">This preview page is safe to share on Facebook and X/Twitter.</p>
-        <a href="{{ url('/article.html?slug=hindi-guguho-ang-punla-ng-pangako') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
+        <a href="{{ url('/article?slug=hindi-guguho-ang-punla-ng-pangako') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
     </main>
 @endsection
+
+

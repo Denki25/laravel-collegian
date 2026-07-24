@@ -1,8 +1,8 @@
-<footer>
+﻿<footer>
     <div class="container">
         <div class="footer-content">
             <div class="footer-section footer-brand-section">
-                <a href="{{ asset('index.html') }}" class="footer-brand-link" aria-label="CLSU Collegian home">
+                <a href="{{ url('/') }}" class="footer-brand-link" aria-label="CLSU Collegian home">
                     <span class="logo-mark" aria-hidden="true">
                         <img src="{{ asset('logo.png') }}" alt="">
                     </span>
@@ -34,4 +34,5 @@
         </div>
     </div>
 </footer>
+
 

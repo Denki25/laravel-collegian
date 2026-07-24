@@ -1,8 +1,8 @@
-@php($activePage = 'opinion')
+﻿@php($activePage = 'opinion')
 @extends('layouts.app')
 @section('page_title', 'Opinion | CLSU Collegian')
 @section('page_description', 'Opinion stories from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/opinion.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_attributes', 'data-section-category="Opinion" data-section-label="Opinion"')
 @section('body_class', '')
 @section('header_after_nav')
@@ -26,3 +26,4 @@
         </section>
     </main>
 @endsection
+

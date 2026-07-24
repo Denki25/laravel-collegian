@@ -1,14 +1,14 @@
-@extends('layouts.share')
+﻿@extends('layouts.share')
 
 @section('page_title', 'Hanggang sa Maubos | CLSU Collegian')
-@section('page_description', 'Sa bawat pag-abante sa lansangan, may bigat agad sa aking mga paa; hawak ang manibela—pilit kong pinapaikot ang araw kahit ako’y unti-unti nitong nilulusaw.')
-@section('canonical_url', url('/share/hanggang-sa-maubos.html?v=2'))
+@section('page_description', 'Sa bawat pag-abante sa lansangan, may bigat agad sa aking mga paa; hawak ang manibelaâ€”pilit kong pinapaikot ang araw kahit akoâ€™y unti-unti nitong nilulusaw.')
+@section('canonical_url', url('/article/hanggang-sa-maubos?v=2'))
 @section('og_title', 'Hanggang sa Maubos | CLSU Collegian')
-@section('og_description', 'Sa bawat pag-abante sa lansangan, may bigat agad sa aking mga paa; hawak ang manibela—pilit kong pinapaikot ang araw kahit ako’y unti-unti nitong nilulusaw.')
+@section('og_description', 'Sa bawat pag-abante sa lansangan, may bigat agad sa aking mga paa; hawak ang manibelaâ€”pilit kong pinapaikot ang araw kahit akoâ€™y unti-unti nitong nilulusaw.')
 @section('og_image', asset('PHOTOS/LITERARY/lit5.jpg'))
 @section('og_image_alt', 'Hanggang sa Maubos artwork')
 @section('twitter_title', 'Hanggang sa Maubos | CLSU Collegian')
-@section('twitter_description', 'Sa bawat pag-abante sa lansangan, may bigat agad sa aking mga paa; hawak ang manibela—pilit kong pinapaikot ang araw kahit ako’y unti-unti nitong nilulusaw.')
+@section('twitter_description', 'Sa bawat pag-abante sa lansangan, may bigat agad sa aking mga paa; hawak ang manibelaâ€”pilit kong pinapaikot ang araw kahit akoâ€™y unti-unti nitong nilulusaw.')
 @section('twitter_image', asset('PHOTOS/LITERARY/lit5.jpg'))
 @section('twitter_image_alt', 'Hanggang sa Maubos artwork')
 
@@ -16,9 +16,11 @@
     <main style="max-width: 720px; margin: 48px auto; font-family: Arial, sans-serif; padding: 0 20px;">
         <p style="text-transform: uppercase; letter-spacing: .12em; color: #fe5d13; font-weight: 700; margin-bottom: 12px;">CLSU Collegian</p>
         <h1 style="font-size: 2rem; line-height: 1.15; margin: 0 0 12px;">Hanggang sa Maubos</h1>
-        <p style="font-size: 1.05rem; line-height: 1.6; color: #444; margin: 0 0 24px;">Sa bawat pag-abante sa lansangan, may bigat agad sa aking mga paa; hawak ang manibela—pilit kong pinapaikot ang araw kahit ako’y unti-unti nitong nilulusaw.</p>
+        <p style="font-size: 1.05rem; line-height: 1.6; color: #444; margin: 0 0 24px;">Sa bawat pag-abante sa lansangan, may bigat agad sa aking mga paa; hawak ang manibelaâ€”pilit kong pinapaikot ang araw kahit akoâ€™y unti-unti nitong nilulusaw.</p>
         <img src="{{ asset('PHOTOS/LITERARY/lit5.jpg') }}" alt="Hanggang sa Maubos artwork" style="width: 100%; height: auto; border-radius: 16px; display: block; margin-bottom: 20px;">
         <p style="font-size: .95rem; color: #666; margin: 0 0 16px;">This preview page is safe to share on Facebook and X/Twitter.</p>
-        <a href="{{ url('/article.html?slug=hanggang-sa-maubos') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
+        <a href="{{ url('/article?slug=hanggang-sa-maubos') }}" style="display: inline-block; background: #fe5d13; color: #fff; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-weight: 700;">Read full article</a>
     </main>
 @endsection
+
+

@@ -1,8 +1,8 @@
-@php($activePage = 'multimedia')
+﻿@php($activePage = 'multimedia')
 @extends('layouts.app')
 @section('page_title', 'Multimedia | CLSU Collegian')
 @section('page_description', 'Videos and multimedia stories from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/multimedia.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_class', 'multimedia-page')
 @section('header_after_nav')
     @include('partials.breaking-ticker')
@@ -31,3 +31,4 @@
         </section>
     </main>
 @endsection
+

@@ -1,8 +1,8 @@
-@php($activePage = 'news')
+﻿@php($activePage = 'news')
 @extends('layouts.app')
 @section('page_title', 'News | CLSU Collegian')
 @section('page_description', 'Latest News stories from CLSU Collegian, the official student publication of Central Luzon State University.')
-@section('canonical_url', url('/news.html?v=2'))
+@section('canonical_url', url('/=2'))
 @section('body_attributes', 'data-section-category="News" data-section-label="News"')
 @section('body_class', '')
 @section('header_after_nav')
@@ -26,3 +26,4 @@
         </section>
     </main>
 @endsection
+

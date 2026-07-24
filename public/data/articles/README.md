@@ -1,4 +1,4 @@
-Article setup per section:
+﻿Article setup per section:
 
 - `news.js` uses `category: "News"`
 - `features.js` uses `category: "Features"`
@@ -15,7 +15,7 @@ Rules when adding an article:
 - Keep `slug` unique across all files.
 - Use `date` format `YYYY-MM-DD`.
 - Put images in the matching `PHOTOS/` folder when possible.
-- For `News` articles, you can add an optional `imageCaption` string to show a small gray caption under the main image on `article.html`.
+- For `News` articles, you can add an optional `imageCaption` string to show a small gray caption under the main image on `article`.
 - Choose a credit label preset when needed:
   - `via` for most write-ups
   - `written` for Literary and First POV write-ups
@@ -51,7 +51,7 @@ Animated or video media options:
 - Standard article: keep using `image` and `imageAlt`.
 - Literary or Komiks animation/video article: add a `literaryMedia` object.
 - Use `literaryMedia.card` for the media shown on section pages.
-- Use `literaryMedia.article` for the media shown on `article.html`.
+- Use `literaryMedia.article` for the media shown on `article`.
 
 Example:
 
@@ -183,4 +183,5 @@ Social preview note:
 - `summary` becomes the Open Graph and Twitter description.
 - `image` or `socialImage` becomes the preview image.
 - Keep preview art absolute-URL safe and ideally close to a 1200x630 crop.
-- After changing article metadata, run `node scripts/generate-share-pages.js` so every `/share/*.html` page is regenerated with the new server-rendered meta tags.
+- After changing article metadata, run `node scripts/generate-share-pages.js` so every `/article/*` page is regenerated with the new server-rendered meta tags.
+
