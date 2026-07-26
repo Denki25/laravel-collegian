@@ -34,6 +34,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;800&family=Noto+Serif:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ $assetVersioned('style.css') }}">
+    <link rel="icon" href="{{ asset('favicon-64.png') }}" sizes="64x64" type="image/png">
+    <link rel="icon" href="{{ asset('favicon-128.png') }}" sizes="128x128" type="image/png">
+    <link rel="icon" href="{{ asset('favicon-192.png') }}" sizes="192x192" type="image/png">
+    <link rel="icon" href="{{ asset('favicon-256.png') }}" sizes="256x256" type="image/png">
+    <link rel="icon" href="{{ asset('favicon-512.png') }}" sizes="512x512" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('favicon-64.png') }}" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon-512.png') }}">
+    <link rel="icon" href="{{ asset('favicon-512.png') }}" sizes="any" type="image/png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 @php
     $bodyAttributes = html_entity_decode(trim($__env->yieldContent('body_attributes')), ENT_QUOTES, 'UTF-8');
