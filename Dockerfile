@@ -16,14 +16,25 @@ COPY . .
 RUN mkdir -p storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
     && chmod -R 777 storage bootstrap/cache
 
-# Allow composer to run as root inside container and then install dependencies
+# Copy example env and create sqlite file so artisan commands during build succeed
+RUN cp .env.example .env || true \
+    && mkdir -p database \
+    && touch database/database.sqlite \
+    && chmod -R 777 database
+
+# Allow composer to run as root inside container
 ENV COMPOSER_ALLOW_SUPERUSER=1
-RUN composer install --no-dev --optimize-autoloader
 
-RUN cp .env.example .env || true
+# Install PHP dependencies without running composer scripts (we'll run needed artisan commands afterwards)
+RUN composer install --no-dev --optimize-autoloader --no-scripts
 
-RUN php artisan key:generate --force || true
+# Generate app key, run migrations and run statamic package setup now that vendor/ exists
+RUN php artisan key:generate --force && \
+    php artisan migrate --force || true && \
+    php artisan package:discover --ansi && \
+    php artisan statamic:install --ansi --no-interaction || true
 
+# Clear caches
 RUN php artisan optimize:clear || true
 
 EXPOSE 10000
