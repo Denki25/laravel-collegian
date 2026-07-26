@@ -1,0 +1,7 @@
+title: Multimedia
+date: true
+sort_dir: desc
+route: '/multimedia/{slug}'
+template: articles/show
+blueprints:
+  - multimedia

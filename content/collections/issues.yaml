@@ -1,0 +1,7 @@
+title: Issues
+date: true
+sort_dir: desc
+route: '/issues/{slug}'
+template: articles/show
+blueprints:
+  - issue

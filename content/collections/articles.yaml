@@ -1,0 +1,7 @@
+title: Articles
+date: true
+sort_dir: desc
+route: '/articles/{slug}'
+template: articles/show
+blueprints:
+  - article

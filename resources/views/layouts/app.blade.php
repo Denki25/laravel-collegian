@@ -48,17 +48,9 @@
     @include('partials.footer')
 
     <script src="{{ $assetVersioned('data/site-config.js') }}"></script>
-    <script src="{{ $assetVersioned('data/articles/editorial.js') }}"></script>
-    <script src="{{ $assetVersioned('data/articles/column.js') }}"></script>
-    <script src="{{ $assetVersioned('data/articles/literary.js') }}"></script>
-    <script src="{{ $assetVersioned('data/articles/features.js') }}"></script>
-    <script src="{{ $assetVersioned('data/articles/opinion.js') }}"></script>
-    <script src="{{ $assetVersioned('data/articles/devcom.js') }}"></script>
-    <script src="{{ $assetVersioned('data/articles/sports.js') }}"></script>
-    <script src="{{ $assetVersioned('data/articles/komiks.js') }}"></script>
-    <script src="{{ $assetVersioned('data/articles/news.js') }}"></script>
     <script src="{{ $assetVersioned('data/issues.js') }}"></script>
     <script src="{{ $assetVersioned('data/multimedia.js') }}"></script>
+    @include('partials.statamic-articles')
     <script src="{{ $assetVersioned('script.js') }}"></script>
 </body>
 </html>

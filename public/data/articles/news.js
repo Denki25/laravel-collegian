@@ -33,9 +33,7 @@ window.CLSU_ARTICLES = (window.CLSU_ARTICLES || []).concat([
             Access the full results here:<br><br>
             https://tinyurl.com/2v9az78r<br>
             </p>
-
             
-
         `
     },
 

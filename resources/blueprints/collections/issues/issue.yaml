@@ -1,0 +1,78 @@
+title: Issue
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: titleLineTwo
+            field:
+              type: text
+              display: Title Line Two
+          -
+            handle: label
+            field:
+              type: text
+              display: Label
+          -
+            handle: subtitle
+            field:
+              type: text
+              display: Subtitle
+          -
+            handle: summary
+            field:
+              type: textarea
+              display: Summary
+              instructions: 'Short excerpt shown in previews.'
+          -
+            handle: author
+            field:
+              type: text
+              display: Author
+          -
+            handle: authorLine
+            field:
+              type: text
+              display: Byline
+              instructions: 'Example: By MARCO BACNIS/CLSU Collegian'
+          -
+            handle: readTime
+            field:
+              type: text
+              display: Read Time
+              instructions: 'Example: 2 min read'
+          -
+            handle: image
+            field:
+              type: text
+              display: Featured Image
+              instructions: 'Relative path inside public/, for example PHOTOS/NEWS/news16.jpg'
+          -
+            handle: imageAlt
+            field:
+              type: text
+              display: Image Alt Text
+          -
+            handle: imageCaption
+            field:
+              type: text
+              display: Image Caption
+          -
+            handle: content
+            field:
+              type: bard
+              display: Issue Content
+              instructions: 'Edit the full issue body here.'
+          -
+            handle: links
+            field:
+              type: textarea
+              display: Links
+              instructions: 'Optional links for the issue, one per line as Label: URL.'
+          -
+            handle: featured
+            field:
+              type: toggle
+              display: Featured

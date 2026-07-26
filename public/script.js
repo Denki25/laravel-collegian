@@ -782,7 +782,7 @@ function getArticlesByCategory(category) {
 function getOpinionArticles() {
     return siteData.articles.filter((article) => {
         const normalizedCategory = normalizeCategoryValue(article.category);
-        return normalizedCategory === "editorial" || normalizedCategory === "column";
+        return normalizedCategory === "editorial" || normalizedCategory === "column" || normalizedCategory === "opinion";
     });
 }
 

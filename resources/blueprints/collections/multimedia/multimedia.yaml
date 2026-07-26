@@ -1,0 +1,117 @@
+title: Multimedia
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: platform
+            field:
+              type: text
+              display: Platform
+          -
+            handle: presenterLabel
+            field:
+              type: text
+              display: Presenter Label
+          -
+            handle: presenter
+            field:
+              type: text
+              display: Presenter
+          -
+            handle: editorLabel
+            field:
+              type: text
+              display: Editor Label
+          -
+            handle: editor
+            field:
+              type: text
+              display: Editor
+          -
+            handle: technicalDirectorLabel
+            field:
+              type: text
+              display: Technical Director Label
+          -
+            handle: technicalDirector
+            field:
+              type: text
+              display: Technical Director
+          -
+            handle: videographerLabel
+            field:
+              type: text
+              display: Videographer Label
+          -
+            handle: videographer
+            field:
+              type: text
+              display: Videographer
+          -
+            handle: embedUrl
+            field:
+              type: text
+              display: Embed URL
+          -
+            handle: sourceUrl
+            field:
+              type: text
+              display: Source URL
+          -
+            handle: aspectRatio
+            field:
+              type: text
+              display: Aspect Ratio
+          -
+            handle: summary
+            field:
+              type: textarea
+              display: Summary
+              instructions: 'Short excerpt shown in previews.'
+          -
+            handle: author
+            field:
+              type: text
+              display: Author
+          -
+            handle: authorLine
+            field:
+              type: text
+              display: Byline
+              instructions: 'Example: By MARCO BACNIS/CLSU Collegian'
+          -
+            handle: readTime
+            field:
+              type: text
+              display: Read Time
+              instructions: 'Example: 2 min read'
+          -
+            handle: image
+            field:
+              type: text
+              display: Featured Image
+              instructions: 'Relative path inside public/, for example PHOTOS/NEWS/news16.jpg'
+          -
+            handle: imageAlt
+            field:
+              type: text
+              display: Image Alt Text
+          -
+            handle: imageCaption
+            field:
+              type: text
+              display: Image Caption
+          -
+            handle: content
+            field:
+              type: bard
+              display: Multimedia Content
+              instructions: 'Edit the full multimedia body here.'
+          -
+            handle: featured
+            field:
+              type: toggle
+              display: Featured
