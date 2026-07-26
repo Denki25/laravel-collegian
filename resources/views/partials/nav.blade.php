@@ -4,7 +4,7 @@
         <div class="logo">
             <a href="{{ url('/') }}" class="logo-link" aria-label="CLSU Collegian home">
                 <span class="logo-mark" aria-hidden="true">
-                    <img src="{{ asset('logo.png') }}" alt="">
+                    <img src="{{ asset('logo.png') }}" alt="CLSU Collegian logo">
                 </span>
                 <span class="logo-copy">
                     <span class="logo-kicker">Campus Publication</span>

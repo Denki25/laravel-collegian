@@ -4,7 +4,7 @@
             <div class="footer-section footer-brand-section">
                 <a href="{{ url('/') }}" class="footer-brand-link" aria-label="CLSU Collegian home">
                     <span class="logo-mark" aria-hidden="true">
-                        <img src="{{ asset('logo.png') }}" alt="">
+                        <img src="{{ asset('logo.png') }}" alt="CLSU Collegian logo">
                     </span>
                     <span class="footer-brand-copy">
                         <span class="footer-brand-title"><span class="footer-brand-title-primary">CLSU</span> <span class="footer-brand-title-accent">Collegian</span></span>
