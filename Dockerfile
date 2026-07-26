@@ -10,10 +10,13 @@ WORKDIR /var/www
 
 COPY . .
 
-RUN composer install --no-dev --optimize-autoloader
-
+# Ensure Laravel storage and cache directories exist before Composer runs
 RUN mkdir -p storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
     && chmod -R 777 storage bootstrap/cache
+
+# Allow composer to run as root inside container and then install dependencies
+ENV COMPOSER_ALLOW_SUPERUSER=1
+RUN composer install --no-dev --optimize-autoloader
 
 RUN cp .env.example .env || true
 
