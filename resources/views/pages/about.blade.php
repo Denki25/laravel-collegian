@@ -67,7 +67,7 @@
                     <div class="board-grid executives-grid">
                         <div class="board-member"><div class="member-info"><h3>ALIANAH MARIE PANGILINAN</h3><p class="member-title">Editor-in-chief</p></div></div>
                         <div class="board-member"><div class="member-info"><h3>JAMES WILLIAM SORIANO</h3><p class="member-title">Associate Editor</p></div></div>
-                        <div class="board-member"><div class="member-info"><h3>HANNAH CATHERINE<br>MALLARI</h3><p class="member-title">Managing Editor for Administration</p></div></div>
+                        <div class="board-member"><div class="member-info"><h3>HANNA CATHERINE<br>MALLARI</h3><p class="member-title">Managing Editor for Administration</p></div></div>
                         <div class="board-member"><div class="member-info"><h3>KATRINA ALESSANDRA DANTING</h3><p class="member-title">Managing Editor for Finance</p></div></div>
                         <div class="board-member"><div class="member-info"><h3>ASHER TERBY ESQUIVEL</h3><p class="member-title">Circulations and Engagements Manager</p></div></div>
                     </div>

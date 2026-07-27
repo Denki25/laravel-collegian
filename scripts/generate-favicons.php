@@ -1,5 +1,5 @@
 <?php
-$sizes = array(64,128,192,256,512);
+$sizes = array(64,128,192,256,512,1024,2048);
 $in = __DIR__ . '/../public/logo.png';
 if (!is_file($in)) {
     echo "Source image not found: $in\n";

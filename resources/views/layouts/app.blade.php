@@ -39,9 +39,11 @@
     <link rel="icon" href="{{ asset('favicon-192.png') }}" sizes="192x192" type="image/png">
     <link rel="icon" href="{{ asset('favicon-256.png') }}" sizes="256x256" type="image/png">
     <link rel="icon" href="{{ asset('favicon-512.png') }}" sizes="512x512" type="image/png">
+    <link rel="icon" href="{{ asset('favicon-1024.png') }}" sizes="1024x1024" type="image/png">
+    <link rel="icon" href="{{ asset('favicon-2048.png') }}" sizes="2048x2048" type="image/png">
     <link rel="shortcut icon" href="{{ asset('favicon-64.png') }}" type="image/png">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon-512.png') }}">
-    <link rel="icon" href="{{ asset('favicon-512.png') }}" sizes="any" type="image/png">
+    <link rel="icon" href="{{ asset('favicon-2048.png') }}" sizes="any" type="image/png">
     <meta name="theme-color" content="#ffffff">
 </head>
 @php
